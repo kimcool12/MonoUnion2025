@@ -1,0 +1,23 @@
+/* Specific styles for the Contact & RSVP Page */
+
+/* Inherits most styles from style.css */
+
+.contact-page-content {
+    padding-top: 120px; /* Adjust for fixed header */
+    padding-bottom: 80px; /* Ensure space before footer */
+}
+
+.contact-info {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    font-size: 1.1em;
+    color: #444;
+    text-align: center;
+}
+
+.contact-info a {
+    font-weight: 600;
+}
+
+
+

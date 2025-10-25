@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modupeola & Emozino</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for elegant typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#details">DETAILS</a></li>
+                <li><a href="support.html">SUPPORT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Page/Welcome Page Section -->
+    <section class="hero-section" id="home">
+        <div class="hero-content">
+            <h1 class="couple-names">Modupeola & Emozino</h1>
+            <p class="wedding-details-hero">November 5, 2025</p>
+          <div class="details"><a href="#details" >View Details</a></div>
+        </div>
+    </section>
+
+    <!-- Wedding Details Section -->
+    <section class="info-section" id="details">
+        <div class="container">
+            <h2>Wedding Details</h2>
+            <div class="details-grid">
+                <div class="detail-item">
+                    <h3>The Ceremony</h3>
+                    <p><strong>Date:</strong> Saturday, November 8, 2025</p>
+                    <p><strong>Time:</strong> 11:00 AM</p>
+                    <p><strong>Location:</strong> TAYNET ACES EVENT HALL, Opposite MRS, 139/141 Baale Animashaun RD Dalemo Alakuko, Lagos State</p>
+                    <p><em>Please arrive by 10:45 AM.</em></p>
+                </div>
+                <div class="detail-item">
+                    <h3>The Reception</h3>
+                    <p><strong>Time:</strong> To follow immediately after the ceremony</p>
+                    <p><strong>Location:</strong> TAYNET ACES EVENT HALL Ballroom</p>
+                    <p><em>Dinner, dancing, and celebrations to follow the ceremony.</em></p>
+                </div>
+                <div class="detail-item">
+                    <h3>Accommodation & Travel</h3>
+                    <p>We've reserved a block of rooms at nearby hotels. Please visit our <a href="support.html">Support page</a> for more information on discounted rates and travel options.</p>
+                </div>
+                <div class="detail-item">
+                    <h3>Dress Code</h3>
+                    <p>Emeraid Green (Monochrome Look)  <br> <br> Come Dressed in Elegance.<br> Ready to celebrate Love and Heritage</p>
+                </div>
+            </div>
+            <div id="countdown" style="font-size: 24px; font-weight: bold; color: #4A4A4A; text-align: center; padding: 20px; font-family: 'Poppins', sans-serif;"></div>
+             <a href="contact.html" class="button secondary-button">RSVP Now</a>
+        </div>
+    </section>
+    <script>
+     // Countdown to Saturday, November 8th, 2025 11:00 AM
+  const countDownDate = new Date("November 8, 2025 11:00:00").getTime();
+
+  const countdown = setInterval(function() {
+    const now = new Date().getTime();
+    const distance = countDownDate - now;
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("countdown").innerHTML =
+      days + " Days : " + hours + " Hours : " + minutes + " Minutes : " + seconds + " Seconds";
+
+    if (distance < 0) {
+      clearInterval(countdown);
+      document.getElementById("countdown").innerHTML = "It's Wedding Time 💕";
+    }
+  }, 1000);
+</script>
+
+    
+        
+
+    <!-- Final Message -->
+    <section class="info-section light-bg">
+        <div class="container">
+            <h2>We Can't Wait To See You!</h2>
+            <p class="section-description">We’re truly delighted that you’ll be part of our special day as we begin this new chapter together. Your love, support, and presence mean the world to us. We can’t wait to share laughter, joy, and unforgettable memories with you, and get ready for a celebration filled with love, happiness, and beautiful moments!</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Modupeola & Emozino. All Rights Reserved.</p>
+            <p>Designed with Love for MonoUnion2025</p>
+        </div>
+    </footer>
+
+</body>
+</html>

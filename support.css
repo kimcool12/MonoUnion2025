@@ -1,0 +1,8 @@
+/* Specific styles for the Support Page */
+
+/* Inherits most styles from style.css */
+
+.support-page-content {
+    padding-top: 120px; /* Adjust for fixed header */
+}
+
