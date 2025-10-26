@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modupeola & Emozino</title>
     <link rel="stylesheet" href="style.css">
     <!-- Google Fonts for elegant typography -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
 
     <header class="main-header">
@@ -15,7 +19,6 @@
             <ul class="nav-links">
                 <li><a href="#home">HOME</a></li>
                 <li><a href="#details">DETAILS</a></li>
-                <li><a href="support.html">SUPPORT</a></li>
                 <li><a href="contact.html">CONTACT</a></li>
             </ul>
         </nav>
@@ -25,8 +28,21 @@
     <section class="hero-section" id="home">
         <div class="hero-content">
             <h1 class="couple-names">Modupeola & Emozino</h1>
-            <p class="wedding-details-hero">November 5, 2025</p>
-          <div class="details"><a href="#details" >View Details</a></div>
+            <p class="wedding-details-hero">November 8, 2025</p>
+            <div class="details"><a href="#details">View Details</a></div>
+        </div>
+    </section>
+
+    <!-- Countdown Section (New) -->
+    <section class="countdown-section light-bg">
+        <div class="container">
+            <div id="hero-countdown" class="countdown-large"></div>
+            <p class="section-description intro-text">
+                Welcome to the Mono Union website.
+                We are delighted to invite you to our wedding celebration, a day that promises to be intimate, cozy, and
+                filled with love.
+                It will be a beautiful day, and we are glad to share it with you. 😊😊
+            </p>
         </div>
     </section>
 
@@ -40,58 +56,49 @@
                     <p><strong>Date:</strong> Saturday, November 8, 2025</p>
                     <p><strong>Time:</strong> 11:00 AM</p>
                     <p><strong>Location:</strong> TAYNET ACES EVENT HALL, Opposite MRS, 139/141 Baale Animashaun RD Dalemo Alakuko, Lagos State</p>
-                    <p><em>Please arrive by 10:45 AM.</em></p>
+                    <p><a href="https://www.google.com/maps/search/TAYNET+ACES+EVENT+HALL,+Opposite+MRS,+139%2F141+Baale+Animashaun+RD+Dalemo+Alakuko,+Lagos+State" target="_blank" class="map-link">View on Google Maps</a></p>
                 </div>
                 <div class="detail-item">
                     <h3>The Reception</h3>
                     <p><strong>Time:</strong> To follow immediately after the ceremony</p>
                     <p><strong>Location:</strong> TAYNET ACES EVENT HALL Ballroom</p>
-                    <p><em>Dinner, dancing, and celebrations to follow the ceremony.</em></p>
-                </div>
-                <div class="detail-item">
-                    <h3>Accommodation & Travel</h3>
-                    <p>We've reserved a block of rooms at nearby hotels. Please visit our <a href="support.html">Support page</a> for more information on discounted rates and travel options.</p>
                 </div>
                 <div class="detail-item">
                     <h3>Dress Code</h3>
-                    <p>Emeraid Green (Monochrome Look)  <br> <br> Come Dressed in Elegance.<br> Ready to celebrate Love and Heritage</p>
+                    <p>Emerald Green (Monochrome Look) <br> <br> Come Dressed in Elegance.<br> Ready to celebrate Love
+                        and Heritage</p>
                 </div>
             </div>
-            <div id="countdown" style="font-size: 24px; font-weight: bold; color: #4A4A4A; text-align: center; padding: 20px; font-family: 'Poppins', sans-serif;"></div>
-             <a href="contact.html" class="button secondary-button">RSVP Now</a>
+            <a href="contact.html" class="button secondary-button">RSVP Now</a>
         </div>
     </section>
-    <script>
-     // Countdown to Saturday, November 8th, 2025 11:00 AM
-  const countDownDate = new Date("November 8, 2025 11:00:00").getTime();
 
-  const countdown = setInterval(function() {
-    const now = new Date().getTime();
-    const distance = countDownDate - now;
-
-    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-    document.getElementById("countdown").innerHTML =
-      days + " Days : " + hours + " Hours : " + minutes + " Minutes : " + seconds + " Seconds";
-
-    if (distance < 0) {
-      clearInterval(countdown);
-      document.getElementById("countdown").innerHTML = "It's Wedding Time 💕";
-    }
-  }, 1000);
-</script>
-
-    
-        
-
-    <!-- Final Message -->
+    <!-- Financial Support Section (Moved from support.html, now on index.html with countdown) -->
     <section class="info-section light-bg">
         <div class="container">
+            <h2>Financial Support (Cash Gifts)</h2>
+            <p class="section-description">For financial support, please send all cash gifts to:</p>
+            <div class="bank-details">
+                <p><strong>Account Number:</strong> 0087925819</p>
+                <p><strong>Bank:</strong> Sterling Bank</p>
+                <p><strong>Account Name:</strong> Afolayan Modupeola</p>
+            </div>
+            <p class="section-description">If you need further details, feel free to reach out to the <a
+                    href="contact.html">RSVP numbers</a>.</p>
+            <div id="financial-support-countdown" class="countdown-medium"></div>
+            <p class="section-description">We look forward to hugging/greeting/dancing with you!</p>
+            <p class="section-description">We love you. 😊😊<br>MonoUnion2025</p>
+        </div>
+    </section>
+
+    <!-- Final Message -->
+    <section class="info-section">
+        <div class="container">
             <h2>We Can't Wait To See You!</h2>
-            <p class="section-description">We’re truly delighted that you’ll be part of our special day as we begin this new chapter together. Your love, support, and presence mean the world to us. We can’t wait to share laughter, joy, and unforgettable memories with you, and get ready for a celebration filled with love, happiness, and beautiful moments!</p>
+            <p class="section-description">We’re truly delighted that you’ll be part of our special day as we begin this
+                new chapter together. Your love, support, and presence mean the world to us. We can’t wait to share
+                laughter, joy, and unforgettable memories with you, and get ready for a celebration filled with love,
+                happiness, and beautiful moments!</p>
         </div>
     </section>
 
@@ -102,5 +109,56 @@
         </div>
     </footer>
 
+    <script>
+        // Set the date we're counting down to (November 8, 2025, 11:00 AM, Lagos, Nigeria timezone)
+        // Using a fixed date string and adjusting for potential timezone differences if needed.
+        const WEDDING_DATE_STRING = "November 8, 2025 11:00:00 GMT+0100"; // Assuming Lagos is GMT+1
+
+        const countDownDate = new Date(WEDDING_DATE_STRING).getTime();
+
+        const updateCountdown = (elementId, messageAfter) => {
+            const now = new Date().getTime();
+            const distance = countDownDate - now;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            let countdownText = "";
+            if (days > 0) {
+                countdownText += days + " Days : ";
+            }
+            countdownText += hours + " Hours : " + minutes + " Minutes : " + seconds + " Seconds";
+
+            if (distance < 0) {
+                document.getElementById(elementId).innerHTML = messageAfter;
+            } else {
+                document.getElementById(elementId).innerHTML = countdownText;
+            }
+        };
+
+        // Update count for the hero section
+        const heroCountdownInterval = setInterval(() => {
+            updateCountdown("hero-countdown", "It's Wedding Time 💕");
+        }, 1000);
+
+        // Update count for the financial support section
+        const financialSupportCountdownInterval = setInterval(() => {
+            updateCountdown("financial-support-countdown", "The celebration is happening!");
+        }, 1000);
+
+        // Initial call to avoid delay
+        updateCountdown("hero-countdown", "It's Wedding Time 💕");
+        updateCountdown("financial-support-countdown", "The celebration is happening!");
+
+        // Clear intervals if the page is unloaded to prevent memory leaks (optional, but good practice)
+        window.addEventListener('beforeunload', () => {
+            clearInterval(heroCountdownInterval);
+            clearInterval(financialSupportCountdownInterval);
+        });
+    </script>
+
 </body>
+
 </html>

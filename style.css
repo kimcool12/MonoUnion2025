@@ -92,6 +92,12 @@ ul {
     color: #666;
 }
 
+.intro-text {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
 /* Buttons */
 .button {
     display: inline-block;
@@ -290,6 +296,41 @@ ul {
     text-align: center;
 }
 
+/* Countdown Styling */
+.countdown-section {
+    padding: 40px 0; /* Less padding than info-section */
+    text-align: center;
+}
+
+.countdown-large {
+    font-family: 'Playfair Display', serif;
+    font-size: 3em;
+    font-weight: 700;
+    color: #a37b58;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.countdown-medium {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.8em;
+    font-weight: 600;
+    color: #7d583a;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+.countdown-small {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
+    font-weight: 400;
+    color: #555;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
 /* Photo Gallery Section */
 .gallery-section {
     padding: 80px 0;
@@ -354,6 +395,28 @@ ul {
     transform: translateY(0);
 }
 
+/* Bank Details Styling */
+.bank-details {
+    background-color: #f0f0e0; /* Light background for the details box */
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 30px auto;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.bank-details p {
+    margin: 5px 0;
+    color: #444;
+}
+
+.bank-details strong {
+    color: #2c3e50;
+    font-weight: 700;
+}
+
 
 /* Footer */
 footer {
@@ -391,6 +454,14 @@ footer a {
         font-size: 2.2em;
     }
 
+    .countdown-large {
+        font-size: 2em;
+    }
+
+    .countdown-medium {
+        font-size: 1.4em;
+    }
+
     .details-grid,
     .photo-grid {
         grid-template-columns: 1fr;
@@ -409,3 +480,24 @@ footer a {
         font-size: 0.8em;
     }
 }
+
+/* ... (existing CSS) ... */
+
+/* New style for the Google Maps link */
+.map-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #a37b58; /* Match your accent color */
+    color: #fff;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.map-link:hover {
+    background-color: #8a6646; /* Darker accent on hover */
+    color: #fff; /* Keep text white on hover */
+}
+
+/* ... (rest of your existing CSS) ... */
