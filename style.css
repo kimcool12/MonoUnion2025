@@ -500,4 +500,140 @@ footer a {
     color: #fff; /* Keep text white on hover */
 }
 
-/* ... (rest of your existing CSS) ... */
+/* General styling for sections (assuming you have this already) */
+.section-description {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 30px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Gallery Section Styling */
+.gallery-section {
+    padding: 80px 20px;
+    background-color: #f9f9f9; /* Light background for contrast */
+    text-align: center;
+}
+
+.gallery-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.gallery-section h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #d3b04c; /* Accent color */
+    margin: 15px auto 0;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto 40px;
+}
+
+.gallery-item {
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 300px; /* Fixed height for uniformity */
+    object-fit: cover; /* Ensures images cover the area without distortion */
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.gallery-more-button {
+    margin-top: 30px;
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #d3b04c; /* Match your existing button style */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.gallery-more-button:hover {
+    background-color: #b3903a; /* Darker shade on hover */
+}
+
+/* Existing button styling (ensure this is present or add it) */
+.button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #d3b04c; /* Gold/accent color */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease, color 0.3s ease;
+    margin-top: 20px;
+}
+
+.button:hover {
+    background-color: #b3903a; /* Darker shade for hover */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+
+}
+
+.secondary-button {
+    background-color: #b3903a; /* Another accent color, adjust as needed */
+    color: #fff;
+    border: none;
+}
+
+.secondary-button:hover {
+    background-color: #b3903a;
+    color: #fff;
+    
+}
+
+/* Ensure container max-width and centering is defined for consistency */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .gallery-grid {
+        grid-template-columns: 1fr; /* Stack items on small screens */
+    }
+
+    .gallery-item img {
+        height: 250px; /* Adjust height for smaller screens */
+    }
+
+    .gallery-section h2 {
+        font-size: 2em;
+    }
+}
