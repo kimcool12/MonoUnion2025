@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directions - Modupeola & Emozino Wedding</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        /* Specific styles for the directions page */
+        .directions-page-content {
+            padding-top: 120px; /* Adjust for fixed header */
+            padding-bottom: 80px; /* Ensure space before footer */
+            text-align: center;
+        }
+
+        .directions-list {
+            list-style: none;
+            padding: 0;
+            margin: 40px auto;
+            max-width: 800px;
+            text-align: left;
+        }
+
+        .directions-list li {
+            background-color: #fff;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 20px 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            line-height: 1.8;
+            font-size: 1.1em;
+            position: relative;
+            padding-left: 50px; /* Space for the number icon */
+        }
+
+        .directions-list li:last-child {
+            margin-bottom: 0;
+        }
+
+        .directions-list li::before {
+            content: counter(direction-counter);
+            counter-increment: direction-counter;
+            position: absolute;
+            left: 15px;
+            top: 20px;
+            background-color: #a37b58;
+            color: #fff;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 700;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.2em;
+        }
+
+        /* Set counter for the list */
+        .directions-list {
+            counter-reset: direction-counter;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="main-header">
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="index.html#home">HOME</a></li>
+                <li><a href="index.html#details">DETAILS</a></li>
+                <li><a href="directions.html">DIRECTIONS</a></li> <!-- New link -->
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="directions-page-content">
+        <section class="info-section">
+            <div class="container">
+                <h2>How to get to Taynet Event Centre</h2>
+                <p class="section-description">Here are detailed directions to help you find your way to our special day!</p>
+
+                <ul class="directions-list">
+                    <li>From Ikeja Under bridge, get transport going to Alakuko, from Alakuko take kẹkẹ going to Taynet events centre opposite MRS  filling station OR</li>
+                    <li>From Agege, cross to the railway take kẹkẹ or korope going to Alakuko, from Alakuko take kẹkẹ going to Taynet events centre opposite MRS  filling station OR</li>
+                    <li>From Oshodi, take bus going to Alakuko, from Alakuko take kẹkẹ going to Taynet events centre opposite MRS filling station OR</li>
+                    <li>From Abule-Egba, take kẹkẹ going to alakuko (Egbado) drop at Taynet events centre opposite MRS&nbsp;filling&nbsp;station</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Modupeola & Emozino. All Rights Reserved.</p>
+            <p>Designed with Love for MonoUnion2025</p>
+        </div>
+    </footer>
+
+</body>
+</html>
